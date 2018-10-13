@@ -1,0 +1,122 @@
+.pri {
+    background: #3F51B5
+}
+
+.acc {
+    background: #FFC107
+}
+
+.dark {
+    background: #212121
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', monospace, sans-serif;
+    cursor: default;
+    user-select: none
+}
+
+html, body {
+    position: relative
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+#banner {
+    width: 125vw;
+    filter: grayscale();
+}
+
+section {
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.section-head {
+    padding: 19px 0;
+}
+
+#features {
+    text-align: center;
+}
+
+#contacts {
+    padding: 0 16px;
+}
+
+#icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#title {
+    color: black;
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+#sub-title {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+}
+
+#install-btn {
+    height: 36px;
+    width: 100%;
+    font-size: 0.875rem;
+    font-family: 'Roboto Medium';
+    background: #fafafa;
+    border: 1px solid #dadce0;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    margin: 6px 0;
+    transition-duration: 200ms;
+    transition-property: background-color, color, box-shadow, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#images {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    border-radius: 8px;
+}
+
+.image {
+    border-radius: 8px;
+    max-width: 380px;
+    margin-right: 2px;
+}
+
+#image-wrapper {
+    width: max-content;
+    height: 260px;
+}
+
+#intro-text {
+    padding: 20px 0;
+    vertical-align: top;
+    margin-left: 16px;
+}
+
+#icon, #intro-text, .image {
+    display: inline-block;
+}
+
+#description p {
+    padding: 16px 0;
+}
+
+.contact {
+    padding: 15px 0;
+}
+
+.feature {
+    color: #626262;
+    font-size: 0.875rem;
+}
