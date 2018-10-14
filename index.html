@@ -15,10 +15,11 @@
 
 <body>
     <!--______________________________CONTENT-->
-    <img id="banner" src="https://www.xda-developers.com/files/2018/09/Magisk-mod-adds-Gboard-themes-like-the-Poco-F1-iOS-Razer-Windows-and-more-810x298_c.png" alt="">
+    <div id="banner">
+    </div>
     <div id="content">
         <section>
-            <img id="icon" src="blob:https://web.telegram.org/f50ec72b-cbbb-49eb-9235-90b24db00d15" alt="">
+            <img id="icon" src="logo.jpg" alt="">
             <div id="intro-text">
                 <p id="title">Gboard Themes</p>
                 <p id="sub-title">Radek Bledowski</p>
@@ -59,7 +60,7 @@
                     <br>
                     The module modifies two of your system props to map the theme location and adds a folder: <i>(/system/etc/gboard_themes)</i> with actual themes inside. -->
                 </p>
-                <p class="text-btn">Read More</p>
+                <p class="text-btn" id="more">Read More</p>
             </div>
         </section>
         <section id="contacts">
@@ -93,13 +94,39 @@
             <p id="prompt-head">
                 Join the community
             </p>
-            <p>Give you feedback directly to developers.</p>
+            <p>Give you feedback directly to developers by joining our Telegram Group.</p>
             <a href="https://t.me/gboardthemes">
                 <p class="text-btn">Join now</p>
             </a>
         </section>
     </div>
+    <section id="more-description">
+        <div class="section-head">
+            <div id="close">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                </svg>
+            </div>
+            <span>Gboard Themes</span>
+        </div>
+        <p>
+            Gboard Themes is a Magisk module to theme your Gboard.
+            <br>
+            <br>
+            Gboard Themes is a Magisk module with themes invented trough modifying the only third party Gboard theme – the one from MIUI.
+            <br>
+            <br>
+            <strong>
+                How does it work?
+            </strong>
+            <br>
+            <br>
+            The module modifies two of your system props to map the theme location and adds a folder: <i>(/system/etc/gboard_themes)</i> with actual themes inside.
+        </p>
+    </section>
     <!--______________________________CONTENT_END-->
 </body>
+<script src="https://rohitkparida.github.io/blog/js/jquery.min.js"></script>
+<script src="js/app.js"></script>
 
 </html>
