@@ -34,7 +34,6 @@ svg {
 #banner {
     position: fixed;
     width: 125vw;
-    filter: grayscale();
 }
 
 section {
