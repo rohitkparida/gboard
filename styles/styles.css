@@ -26,10 +26,12 @@ svg {
 #more-description {
     position: fixed;
     background: #fafafa;
-    height: 100vh;
+    height: 100%;
     width: calc(100% - 32px);
     top: 0;
     display: none;
+    overscroll-behavior: contain;
+    overflow: auto;
 }
 
 #more-description p {
@@ -43,6 +45,24 @@ svg {
 
 #close {
     display: inline-block;
+}
+
+.info {
+    margin: 20px 0;
+    margin-right: 10%;
+    width: 40%;
+    float: left;
+    display: inline-block;
+}
+
+.info span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    height: 1px;
+    background-color: #e0e0e0;
+    border: none;
 }
 
 #content {
@@ -167,7 +187,7 @@ section {
     fill: #616161;
 }
 
-.contact span, #more-description span {
+.contact span, #more-description .section-head span {
     margin-left: 16px;
     vertical-align: super;
 }
@@ -181,8 +201,11 @@ section {
 @media (min-width: 430px) {
     #content {
         margin-top: 25vh;
-        padding: 0 24px;
         margin-bottom: 16px;
         border-radius: 8px;
     }
-}
+
+    #more-description {
+        position: absolute;
+        overscroll-behavior: unset;
+    }

@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $("#more").click(function() {
-        $("#more-description").slideDown(200);
+        $("#more-description").slideDown(150);
         console.log('yess');
     });
     $("#close").click(function() {
-        $("#more-description").slideUp(200);
+        $("#more-description").slideUp(150);
     });
 });
