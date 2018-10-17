@@ -85,6 +85,7 @@ hr {
 section {
     padding: 16px;
     border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
 }
 
 .section-head, #prompt-head {
@@ -127,6 +128,20 @@ section {
 
 #prompt p {
     padding-top: 0;
+    display: inline-block;
+}
+
+#prompt svg {
+    display: inline-block;
+    width: 28%;
+    height: 77px;
+    padding-top: 55px;
+}
+
+#prompt span {
+    width: 70%;
+    float: left;
+    margin-right: 2%;
 }
 
 .text-btn {
@@ -155,6 +170,8 @@ section {
     border-radius: 8px;
     margin-top: 16px;
     scroll-snap-type: x mandatory;
+    height: 260px;
+    padding-bottom: 12px;
 }
 
 .image {
@@ -166,7 +183,6 @@ section {
 
 #image-wrapper {
     width: max-content;
-    height: 260px;
 }
 
 #intro-text {
@@ -181,6 +197,10 @@ section {
 
 .contact {
     padding: 15px 0;
+}
+
+.contact p {
+    margin-left: 44px;
 }
 
 .contact svg {
@@ -209,3 +229,26 @@ section {
         position: absolute;
         overscroll-behavior: unset;
     }
+
+    /* width */
+    #images::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    /* Track */
+    #images::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 6px 6px 0 0;
+    }
+
+    /* Handle */
+    #images::-webkit-scrollbar-thumb {
+        background: #bdbdbd;
+        border-radius: 6px 6px 0 0;
+    }
+
+    /* Handle on hover */
+    #images::-webkit-scrollbar-thumb:hover {
+        background: #9E9E9E;
+    }
+}
